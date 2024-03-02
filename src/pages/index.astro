@@ -1,5 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+// Pictures
+import InfusionsPic from '../assets/infusions.jpg'
+import TeaPic from '../assets/tea.jpg'
+import TrinityPic from '../assets/trinity.png'
+import AccessoriesPic from '../assets/accessories.jpg'
 ---
 
 <Layout title="Bienvenido a Maison Trinithe">
@@ -61,14 +68,10 @@ import Layout from '../layouts/Layout.astro';
 
     </header>
 
-    <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <ul class="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       <li>
         <a href="#" class="group block overflow-hidden">
-          <img
-            src="https://scontent.cdninstagram.com/v/t39.30808-6/397315739_17944855256719793_1064652191603237011_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=105&_nc_ohc=imDC_VfJ7MYAX-YRP9D&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzIyNzM2MTQyNTMxNTgzMjIwOQ%3D%3D.2-ccb7-5&oh=00_AfCuqm9bn76MDIfMcJ9Z_lgBSWCHuADJeQMbg3CKO2UnqQ&oe=65E68413&_nc_sid=10d13b"
-            alt=""
-            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-          />
+          <Image src={InfusionsPic} alt="" class='h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]'/>
 
           <div class="relative bg-white pt-3">
             <h3 class="text-md text-gray-700 group-hover:underline group-hover:underline-offset-4">
@@ -80,11 +83,7 @@ import Layout from '../layouts/Layout.astro';
 
       <li>
         <a href="#" class="group block overflow-hidden">
-          <img
-            src="https://scontent.cdninstagram.com/v/t39.30808-6/391668198_17942676530719793_6217689986345225294_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=105&_nc_ohc=rvyKtuPN9SsAX_YoyDt&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzIxNTg2MDE4OTcwNTg2MTkxNA%3D%3D.2-ccb7-5&oh=00_AfBdSSzpZHdQq2B7Mg8Jufk1IZoWLPUSVmrD21UQyX2V9w&oe=65E767CA&_nc_sid=10d13b"
-            alt=""
-            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-          />
+          <Image src={TeaPic} alt="" class='h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]'/>
 
           <div class="relative bg-white pt-3">
             <h3 class="text-md text-gray-700 group-hover:underline group-hover:underline-offset-4">
@@ -96,11 +95,7 @@ import Layout from '../layouts/Layout.astro';
 
       <li>
         <a href="#" class="group block overflow-hidden">
-          <img
-            src="https://maisontrinithe.com/wp-content/uploads/2023/09/mixto.png"
-            alt=""
-            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-          />
+          <Image src={TrinityPic} alt="" class='h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]'/>
 
           <div class="relative bg-white pt-3">
             <h3 class="text-md text-gray-700 group-hover:underline group-hover:underline-offset-4">
@@ -112,11 +107,7 @@ import Layout from '../layouts/Layout.astro';
 
       <li>
         <a href="#" class="group block overflow-hidden">
-          <img
-            src="https://maisontrinithe.com/wp-content/uploads/2023/12/IMG_8075-683x1024.jpg"
-            alt=""
-            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-          />
+          <Image src={AccessoriesPic} alt="" class='h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]'/>
 
           <div class="relative bg-white pt-3">
             <h3 class="text-md text-gray-700 group-hover:underline group-hover:underline-offset-4">
