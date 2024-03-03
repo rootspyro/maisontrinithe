@@ -9,7 +9,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Somos una marca exclusiva de té e infusiones provenientes del principal país exportador de té. Clásico, ceremonial, artístico" />
@@ -19,9 +19,9 @@ const { title } = Astro.props;
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
 		<title>{title}</title>
 	</head>
-	<body class="">
+	<body class="w-screen">
     <Navbar />
-		<slot class="overflow-x-hidden !important" />
+		<slot class="overflow-x-hidden w-screen" />
     <Footer />
 	</body>
   <style>
