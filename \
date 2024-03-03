@@ -14,7 +14,7 @@ import Kromi from "../assets/markets/kromi.svg"
 import VidaAutoMercadods from "../assets/markets/vidaautomercados.png"
 import BotigaGourmet from "../assets/markets/botigagrourmet.png"
 import CrakosFood from "../assets/markets/crakosfood.png"
-import FreshFish from "../assets/markets/freshfish.png"
+import FreshFish from "../assets/markets/freshfish.jpg"
 ---
 
 <Layout title="Bienvenido a Maison Trinithe">
@@ -160,77 +160,43 @@ import FreshFish from "../assets/markets/freshfish.png"
   />
 </section>
 
-<div class="mt-16 flex flex-col w-full items-center gap-5 px-10">
-  <h2 class="text-xl  text-gray-900 sm:text-3xl">Encuentranos <i class="fi fi-rr-marker"></i></h2>
-  <p class="sm:text-sm/relaxed font-light max-w-lg text-center">
-    Puedes encontrarnos en distintos mercados a lo largo de Valencia y Caracas, asi como nuestra <a class="text-sky-600 hover:text-sky-800" href="#">tienda online</a> para recibirlo desde donde estes.
-  </p>
-</div>
-
-<div class="w-full inline-flex flex-nowrap h-48">
+<div class="w-full inline-flex flex-nowrap">
     <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
         <li>
-          <a href="#">
-            <Image class="w-40 hover:w-44 hover:drop-shadow-md transition-all duration-200" src={TuZonaMarket} alt='' />
-          </a>
+          <Image width="200" src={TuZonaMarket} alt='' />
         </li>
         <li>
-          <a href="#">
-            <Image class="w-28 hover:w-32 hover:drop-shadow-md transition-all duration-200" src={Kromi} alt='' />
-          </a>
+          <Image width="100" src={Kromi} alt='' />
         </li>
         <li>
-          <a href="#">
-            <Image class="w-40 hover:w-44 hover:drop-shadow-md transition-all duration-200" src={VidaAutoMercadods} alt='' />
-          </a>
+          <Image width="200" src={VidaAutoMercadods} alt='' />
         </li>
         <li>
-          <a href="#">
-            <Image class="w-28 hover:w-32 hover:drop-shadow-md transition-all duration-200" src={BotigaGourmet} alt='' />
-          </a>
+          <Image width="180" src={BotigaGourmet} alt='' />
         </li>
         <li>
-          <a href="#">
-            <Image class="w-24 hover:w-28 hover:drop-shadow-md transition-all duration-200" src={CrakosFood} alt='' />
-          </a>
+          <Image width="100" src={CrakosFood} alt='' />
         </li>
         <li>
-          <a href="#">
-            <Image class="w-20 hover:w-24 hover:drop-shadow-md transition-all duration-200" src={FreshFish} alt='' />
-          </a>
+          <Image width="200" src={FreshFish} alt='' />
         </li>
     </ul>                
 
     <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
         <li>
-          <a href="#">
-            <Image class="w-40 hover:w-44 hover:drop-shadow-md transition-all duration-200" src={TuZonaMarket} alt='' />
-          </a>
+          <Image width="200" src={TuZonaMarket} alt='' />
         </li>
         <li>
-          <a href="#">
-            <Image class="w-28 hover:w-32 hover:drop-shadow-md" src={Kromi} alt='' />
-          </a>
+          <Image width="100" src={Kromi} alt='' />
         </li>
         <li>
-          <a href="#">
-            <Image class="w-40 hover:w-44 hover:drop-shadow-md" src={VidaAutoMercadods} alt='' />
-          </a>
+          <Image width="200" src={VidaAutoMercadods} alt='' />
         </li>
         <li>
-          <a href="#">
-            <Image class="w-28 hover:w-32 hover:drop-shadow-md" src={BotigaGourmet} alt='' />
-          </a>
+          <Image width="180" src={BotigaGourmet} alt='' />
         </li>
         <li>
-          <a href="#">
-            <Image class="w-24 hover:w-28 hover:drop-shadow-md" src={CrakosFood} alt='' />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <Image class="w-20 hover:w-24 hover:drop-shadow-md" src={FreshFish} alt='' />
-          </a>
+          <Image width="100" src={CrakosFood} alt='' />
         </li>
     </ul>
 </div>
