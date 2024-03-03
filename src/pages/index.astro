@@ -19,7 +19,7 @@ import FreshFish from "../assets/markets/freshfish.png"
 ---
 
 <Layout title="Bienvenido a Maison Trinithe">
-<section class="bg-gray-50 text-neutral-700">
+<section class="text-neutral-700" id="banner">
   <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
     <div class="mx-auto max-w-xl text-center">
       <h1 class="text-3xl font-light sm:text-5xl">
@@ -52,12 +52,22 @@ import FreshFish from "../assets/markets/freshfish.png"
     </div>
   </div>
 </section>
+
+<style>
+#banner {
+  background-image: linear-gradient(rgba(245,245,245,0.8), rgba(245,245,245,0.5)), url(/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
 <section>
   <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
     <header>
       <h2 class="text-xl font-normal text-gray-900 sm:text-3xl">Nuestros Productos</h2>
 
-      <p class="mt-4 max-w-md text-gray-500">
+      <p class="mt-4 max-w-md text-gray-500 font-light">
         Somos una marca exclusiva de té e infusiones provenientes del principal país exportador de té. 
       </p>
 
@@ -132,15 +142,13 @@ import FreshFish from "../assets/markets/freshfish.png"
 
 <section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:max-h-96">
   <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-    <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+    <div class="mx-auto max-w-xl text-center sm:text-left">
       <h2 class="text-2xl text-gray-900 md:text-3xl">
       Recetas 
       </h2>
 
-      <p class="hidden font-light text-gray-500 md:mt-4 md:block">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
-        sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
-        quisque ut interdum tincidunt duis.
+      <p class="font-light text-gray-500 mt-4 block">
+      Consulta nuestras recetas para disfrutar al maximo la experiencia que ofrece nuestro catalogo de Te e Infusiones. 
       </p>
 
       <div class="mt-4 md:mt-8">
