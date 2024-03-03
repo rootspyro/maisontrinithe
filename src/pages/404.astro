@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title="página no encontrada">
+ <section class="text-neutral-700 z-1 bg-gray-50">
+  <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+    <div class="mx-auto max-w-xl text-center">
+      <h1 class="text-3xl font-normal font-serif sm:text-5xl">
+      Error 404 
+      </h1>
+
+      <p class="mt-4 sm:text-xl/relaxed font-light">
+      No encontramos esta página
+      </p>
+
+
+      <div class="mt-8 flex flex-wrap justify-center gap-4 mt-10">
+        <a
+          class="group relative inline-block text-sm font-normal text-neutral-700 focus:outline-none focus:ring active:text-red-500"
+          href="/"
+        >
+          <span class="absolute inset-0 border border-current"></span>
+          <span
+            class="block border border-current bg-white px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
+          >
+            volver al inicio
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+</Layout>
