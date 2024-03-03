@@ -7,6 +7,7 @@ import InfusionsPic from '../assets/infusions.jpg'
 import TeaPic from '../assets/tea.jpg'
 import TrinityPic from '../assets/trinity.png'
 import AccessoriesPic from '../assets/accessories.jpg'
+import RecipesPic from "../assets/recipes.jpg"
 
 // Markets
 import TuZonaMarket from "../assets/markets/tuzonamarket.png"
@@ -129,14 +130,14 @@ import FreshFish from "../assets/markets/freshfish.png"
 </section>
 
 
-<section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
+<section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:max-h-96">
   <div class="p-8 md:p-12 lg:px-16 lg:py-24">
     <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-      <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit
+      <h2 class="text-2xl text-gray-900 md:text-3xl">
+      Recetas
       </h2>
 
-      <p class="hidden text-gray-500 md:mt-4 md:block">
+      <p class="hidden font-light text-gray-500 md:mt-4 md:block">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
         sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
         quisque ut interdum tincidunt duis.
@@ -144,20 +145,20 @@ import FreshFish from "../assets/markets/freshfish.png"
 
       <div class="mt-4 md:mt-8">
         <a
+          class="group relative inline-block text-sm font-normal text-neutral-700 focus:outline-none focus:ring active:text-red-500"
           href="#"
-          class="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
         >
-          Get Started Today
-        </a>
+          <span class="absolute inset-0 border border-current"></span>
+          <span
+            class="block border border-current bg-white px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
+          >
+          Ir a la Tienda
+          </span>
       </div>
     </div>
   </div>
 
-  <img
-    alt=""
-    src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-    class="h-56 w-full object-cover sm:h-full"
-  />
+  <Image src={RecipesPic} alt="" class='w-full object-cover sm:h-full'/>
 </section>
 
 <div class="mt-16 flex flex-col w-full items-center gap-5 px-10">
@@ -167,8 +168,8 @@ import FreshFish from "../assets/markets/freshfish.png"
   </p>
 </div>
 
-<div class="w-full inline-flex flex-nowrap h-48">
-    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+<div class="inline-flex flex-nowrap h-48 mb-24 ">
+    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll ">
         <li>
           <a href="#">
             <Image class="w-40 hover:w-44 hover:drop-shadow-md transition-all duration-200" src={TuZonaMarket} alt='' />
