@@ -22,7 +22,7 @@ import FreshFish from "../assets/markets/freshfish.png"
 <section class="text-neutral-700 z-1" id="banner">
   <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
     <div class="mx-auto max-w-xl text-center animate-fade-down animate-fade animate-duration-700 animate-ease-linear">
-      <h1 class="text-3xl font-light sm:text-5xl">
+      <h1 class="text-3xl font-normal font-serif sm:text-5xl">
         Maison Trinithé
       </h1>
 
@@ -64,7 +64,7 @@ import FreshFish from "../assets/markets/freshfish.png"
 
 <section>
   <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-    <header>
+    <header id="products" class="opacity-0">
       <h2 class="text-xl font-normal text-gray-900 sm:text-3xl">Nuestros Productos</h2>
 
       <p class="mt-4 max-w-md text-gray-500 font-light">
@@ -142,7 +142,7 @@ import FreshFish from "../assets/markets/freshfish.png"
 
 <section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:max-h-96">
   <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-    <div class="mx-auto max-w-xl text-center sm:text-left">
+    <div class="mx-auto max-w-xl text-center sm:text-left opacity-0" id="recipes">
       <h2 class="text-2xl text-gray-900 md:text-3xl">
       Recetas 
       </h2>
@@ -170,7 +170,7 @@ import FreshFish from "../assets/markets/freshfish.png"
   <Image src={RecipesPic} alt="" class='w-full object-cover sm:h-full'/>
 </section>
 
-<section class="bg-white">
+<section class="bg-white opacity-0" id="location">
 <div class="flex flex-col w-full items-center gap-5 px-10">
   <h2 class="mt-16 text-xl  text-gray-900 sm:text-3xl">Encuentranos <i class="fi fi-rr-marker"></i></h2>
   <p class="sm:text-sm/relaxed font-light max-w-lg text-center">
@@ -246,4 +246,37 @@ import FreshFish from "../assets/markets/freshfish.png"
     </ul>
 </div>
 </section>
+<script>
+
+const products = document.getElementById("products");
+const recipes = document.getElementById("recipes");
+const location = document.getElementById("location");
+
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+window.addEventListener("scroll", function(){
+
+
+    if (isInViewport(products)) {
+      products.classList.add("animate-fade-right");
+    }
+
+    if (isInViewport(recipes)) {
+      recipes.classList.add("animate-fade-right");
+    }
+
+    if (isInViewport(location)) {
+      location.classList.add("animate-fade-down");
+    }
+})
+
+</script>
 </Layout>
