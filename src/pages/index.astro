@@ -170,7 +170,7 @@ import FreshFish from "../assets/markets/freshfish.png"
   <Image src={RecipesPic} alt="" class='w-full object-cover sm:h-full'/>
 </section>
 
-<section class="bg-white opacity-0" id="location">
+<section class="bg-white" id="location">
 <div class="flex flex-col w-full items-center gap-5 px-10">
   <h2 class="mt-16 text-xl  text-gray-900 sm:text-3xl">Encuentranos <i class="fi fi-rr-marker"></i></h2>
   <p class="sm:text-sm/relaxed font-light max-w-lg text-center">
@@ -250,7 +250,7 @@ import FreshFish from "../assets/markets/freshfish.png"
 
 const products = document.getElementById("products");
 const recipes = document.getElementById("recipes");
-const location = document.getElementById("location");
+//const location = document.getElementById("location");
 
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -273,9 +273,9 @@ window.addEventListener("scroll", function(){
       recipes.classList.add("animate-fade-right");
     }
 
-    if (isInViewport(location)) {
-      location.classList.add("animate-fade-down");
-    }
+    //if (isInViewport(location)) {
+    //  location.classList.add("animate-fade-down");
+  //  }
 })
 
 </script>

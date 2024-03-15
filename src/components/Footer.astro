@@ -1,7 +1,7 @@
 ---
-interface Props {
-  
-}
+import { Image } from 'astro:assets';
+
+import FooterPic from "../assets/footer.jpg"
 ---
 
 <footer class="bg-gray-50 lg:grid lg:grid-cols-5">
@@ -11,6 +11,7 @@ interface Props {
       alt=""
       class="absolute inset-0 h-full w-full object-cover"
     />
+    <Image src={FooterPic} class="absolute inset-0 h-full w-full object-cover" alt='tea picture'/>
   </div>
 
   <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
